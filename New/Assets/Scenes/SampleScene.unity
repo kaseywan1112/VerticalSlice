@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 163608249}
   - component: {fileID: 163608248}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -637,7 +637,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.058000002, y: 0.21937715}
   m_AnchorMax: {x: 0.92800003, y: 0.7957374}
-  m_AnchoredPosition: {x: 6.5, y: -1.5}
+  m_AnchoredPosition: {x: 6.5, y: -1.4999962}
   m_SizeDelta: {x: -647, y: -65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233922554
@@ -1051,7 +1051,7 @@ GameObject:
   - component: {fileID: 382902806}
   - component: {fileID: 382902805}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1420,12 +1420,32 @@ MonoBehaviour:
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"player","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"ContinueButton","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"npc","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"currentNode","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"DialogueNode,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"dialogueTextUI","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"btnText_0","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"btnText_1","value":{"$content":7,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"btnText_2","value":{"$content":8,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"btnText_3","value":{"$content":9,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"optionbtn0","value":{"$content":10,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"optionbtn1","value":{"$content":11,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"optionbtn2","value":{"$content":12,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"optionbtn3","value":{"$content":13,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 2109618185}
     - {fileID: 1154317172}
     - {fileID: 819990618}
     - {fileID: 1774620201}
+    - {fileID: 11400000, guid: 4bcbefa1756907a409b4cef6285fa5d3, type: 2}
+    - {fileID: 233922552}
+    - {fileID: 382902803}
+    - {fileID: 733758190}
+    - {fileID: 163608246}
+    - {fileID: 2141013370}
+    - {fileID: 1396633469}
+    - {fileID: 481100534}
+    - {fileID: 1042245314}
+    - {fileID: 1673167756}
 --- !u!114 &410461068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1673,7 +1693,7 @@ GameObject:
   - component: {fileID: 481100537}
   - component: {fileID: 481100536}
   m_Layer: 5
-  m_Name: option2
+  m_Name: option1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2592,7 +2612,7 @@ GameObject:
   - component: {fileID: 733758193}
   - component: {fileID: 733758192}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3246,7 +3266,7 @@ GameObject:
   - component: {fileID: 1042245317}
   - component: {fileID: 1042245316}
   m_Layer: 5
-  m_Name: option3
+  m_Name: option2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3651,10 +3671,12 @@ MonoBehaviour:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"MainCamera","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"isDialogueOpen","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"npc","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"currentNode","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"DialogueNode,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 330585543}
     - {fileID: 1774620201}
+    - {fileID: 11400000, guid: 4bcbefa1756907a409b4cef6285fa5d3, type: 2}
 --- !u!195 &1154317177
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3979,7 +4001,7 @@ GameObject:
   - component: {fileID: 1396633472}
   - component: {fileID: 1396633471}
   m_Layer: 5
-  m_Name: option1
+  m_Name: option0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4502,7 +4524,7 @@ GameObject:
   - component: {fileID: 1673167759}
   - component: {fileID: 1673167758}
   m_Layer: 5
-  m_Name: option4
+  m_Name: option3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5026,7 +5048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1917761165
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5036,19 +5058,19 @@ RectTransform:
   m_GameObject: {fileID: 1917761164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3125, y: 1.3125, z: 1.3125}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.03, y: 1.03, z: 1.03}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1396633470}
   - {fileID: 481100535}
   - {fileID: 1042245315}
   - {fileID: 1673167757}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2109618186}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 479.49234, y: 94.7197}
-  m_SizeDelta: {x: 960.38, y: 189.48744}
+  m_AnchorMax: {x: 1, y: 0.38200003}
+  m_AnchoredPosition: {x: -0.5076294, y: 69.059814}
+  m_SizeDelta: {x: 0.38000488, y: 101.60663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1929222265
 PrefabInstance:
@@ -5236,6 +5258,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 233922553}
+  - {fileID: 1917761165}
   - {fileID: 819990622}
   m_Father: {fileID: 410461071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5294,7 +5317,7 @@ GameObject:
   - component: {fileID: 2141013373}
   - component: {fileID: 2141013372}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5433,4 +5456,3 @@ SceneRoots:
   - {fileID: 311978397}
   - {fileID: 1672202977}
   - {fileID: 1287238645}
-  - {fileID: 1917761165}
