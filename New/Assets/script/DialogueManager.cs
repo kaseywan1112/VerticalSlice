@@ -24,6 +24,18 @@ public class DialogueManager : MonoBehaviour
     private DialogueNode currentDataNode;
     private int currentLineIndex = 0;
 
+    private void Start()
+    {
+        if (dialoguePanel != null)
+        {
+            dialoguePanel.SetActive(false);
+        }
+
+        if (portraitImageUI != null)
+        {
+            portraitImageUI.gameObject.SetActive(false);
+        }
+    }
     public void StartDialogue(DialogueNode startNode)
     {
         dialoguePanel.SetActive(true);
