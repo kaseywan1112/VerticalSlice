@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: DIalogue_01
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Ghost
+    portrait: {fileID: 21300000, guid: 7d3fa7d54b6bed141be46d6109a05be0, type: 3}
+    text: Hi Cow
+  - speakerName: Cow
+    portrait: {fileID: 21300000, guid: ba53fa4dc20dd964ea8922989dda3edf, type: 3}
+    text: Hi
+  options:
+  - speakerName: Ghost
+    portrait: {fileID: 0}
+    replyText: Mooooooo
+    nextNode: {fileID: 11400000, guid: a330ff0c9d61c98418c065b9e72506d7, type: 2}
+  - speakerName: Ghost
+    portrait: {fileID: 0}
+    replyText: Hi
+    nextNode: {fileID: 0}
