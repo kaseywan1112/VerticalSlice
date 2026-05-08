@@ -11,10 +11,16 @@ public class CameraFollow : MonoBehaviour
     public float maxPanDistance = 4f;
     public float panSmoothTime = 0.5f;
     public float maxPanSpeed = 10f;
-
     [Range(0.01f, 0.4f)]
     public float edgeThreshold = 0.1f;
 
+    public bool enableBounds = true;
+    public float minX = -50f;
+    public float maxX = 50f;
+    public float minZ = -10f;
+    public float maxZ = 50f;
+
+    [HideInInspector]
     public bool isInDialogue = false;
 
     private Vector3 currentVelocity = Vector3.zero;
@@ -24,8 +30,9 @@ public class CameraFollow : MonoBehaviour
         if (target == null) return;
 
         Vector3 basePosition = target.position - new Vector3(0, 0, cameraDistance);
-        basePosition.y = cameraHeight;
+        basePosition.y = target.position.y + cameraHeight;
 
+ 
         Vector3 mouseOffset = Vector3.zero;
         if (!isInDialogue)
         {
@@ -45,6 +52,12 @@ public class CameraFollow : MonoBehaviour
         }
 
         Vector3 targetFinalPosition = basePosition + mouseOffset;
+
+        if (enableBounds)
+        {
+            targetFinalPosition.x = Mathf.Clamp(targetFinalPosition.x, minX, maxX);
+            targetFinalPosition.z = Mathf.Clamp(targetFinalPosition.z, minZ, maxZ);
+        }
 
         transform.position = Vector3.SmoothDamp(
             transform.position,
