@@ -38,8 +38,16 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(DialogueNode startNode)
     {
+        if (dialoguePanel != null && dialoguePanel.activeSelf && currentDataNode == startNode)
+        {
+            return;
+        }
+
         dialoguePanel.SetActive(true);
         if (inventoryPanel != null) inventoryPanel.SetActive(false);
+
+        CameraFollow camFollow = Camera.main.GetComponent<CameraFollow>();
+        if (camFollow != null) camFollow.isInDialogue = true;
 
         currentDataNode = startNode;
         currentLineIndex = 0;
@@ -178,6 +186,9 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue()
     {
         dialoguePanel.SetActive(false);
+
+        CameraFollow camFollow = Camera.main.GetComponent<CameraFollow>();
+        if (camFollow != null) camFollow.isInDialogue = false;
 
         if (portraitImageUI != null)
         {

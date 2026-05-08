@@ -35,7 +35,7 @@ public class ItemPickup : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerNear && Input.GetKeyDown(KeyCode.Space))
+        if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
         {
             if (InventoryManager.instance.AddItem(itemName, itemIcon))
             {
