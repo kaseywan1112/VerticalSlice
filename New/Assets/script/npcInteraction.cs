@@ -1,70 +1,73 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NPCInteraction : MonoBehaviour
 {
+    public DialogueNode startingNode;
 
-    public GameObject talkObject;
-    public GameObject stopObject;
     public Transform playerTransform;
+    public float interactRadius = 3f;
+    private bool isPlayerInRange = false;
 
-    public float outerRadius = 3f;
-    public float innerRadius = 0.6f;
+    public GameObject interactPrompt;
 
-    public bool canTalk = false;
-    public bool IsPlayerNear()
-    {
-        return canTalk;
-    }
+    public UnityEvent onDialogueComplete;
+
     void Start()
     {
+        if (playerTransform == null)
+            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 
+        if (interactPrompt != null)
+        {
+            interactPrompt.SetActive(false);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (playerTransform == null)
+        if (playerTransform == null) return;
+
+        isPlayerInRange = Vector3.Distance(transform.position, playerTransform.position) <= interactRadius;
+
+        bool isDialogueOpen = DialogueManager.Instance != null && DialogueManager.Instance.dialoguePanel.activeSelf;
+
+        if (interactPrompt != null)
         {
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null) playerTransform = player.transform;
-            return;
+            if (isPlayerInRange && !isDialogueOpen)
+            {
+                interactPrompt.SetActive(true);
+            }
+            else
+            {
+                interactPrompt.SetActive(false);
+            }
         }
 
-        float distance = Vector3.Distance(transform.position, playerTransform.position);
-
-        if (distance < innerRadius)
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.Space) && !isDialogueOpen)
         {
-            ShowStopMode();
-        }
-        else if (distance < outerRadius)
-        {
-            ShowTalkMode();
-        }
-        else
-        {
-            HideAll();
+            StartDialogue();
         }
     }
-    void ShowStopMode()
+
+    private void StartDialogue()
     {
-        talkObject.SetActive(false);
-        stopObject.SetActive(true);
-        canTalk = false;
+        if (startingNode != null)
+        {
+            DialogueManager.Instance.StartConversation(startingNode, FinishDialogue);
+        }
     }
 
-    void ShowTalkMode()
+    public void FinishDialogue()
     {
-        talkObject.SetActive(true);
-        stopObject.SetActive(false);
-        canTalk = true;
+        onDialogueComplete.Invoke();
     }
 
-    void HideAll()
+    private void OnDrawGizmosSelected()
     {
-        talkObject.SetActive(false);
-        stopObject.SetActive(false);
-        canTalk = false;
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, interactRadius);
     }
 }

@@ -4,9 +4,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using Unity.VisualScripting;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager Instance;
+    void Awake() { Instance = this; }
+
     public GameObject dialoguePanel;
     public TextMeshProUGUI npcTextUI;
     public TextMeshProUGUI nameTextUI;
@@ -23,6 +27,9 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueNode currentDataNode;
     private int currentLineIndex = 0;
+    private Action onDialogueEndCallback;
+
+
 
     private void Start()
     {
@@ -36,6 +43,11 @@ public class DialogueManager : MonoBehaviour
             portraitImageUI.gameObject.SetActive(false);
         }
     }
+    public void StartConversation(DialogueNode startNode, Action onEndCallback)
+    {
+        onDialogueEndCallback = onEndCallback; 
+        StartDialogue(startNode);             
+    }
     public void StartDialogue(DialogueNode startNode)
     {
         if (dialoguePanel != null && dialoguePanel.activeSelf && currentDataNode == startNode)
@@ -48,6 +60,14 @@ public class DialogueManager : MonoBehaviour
 
         CameraFollow camFollow = Camera.main.GetComponent<CameraFollow>();
         if (camFollow != null) camFollow.isInDialogue = true;
+
+        if (player != null)
+        {
+            Variables.Object(player).Set("isDialogueOpen", true);
+
+            UnityEngine.AI.NavMeshAgent agent = player.GetComponent<UnityEngine.AI.NavMeshAgent>();
+            if (agent != null) agent.isStopped = true;
+        }
 
         currentDataNode = startNode;
         currentLineIndex = 0;
@@ -186,6 +206,13 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue()
     {
         dialoguePanel.SetActive(false);
+        if (player != null)
+        {
+            Variables.Object(player).Set("isDialogueOpen", false);
+
+            UnityEngine.AI.NavMeshAgent agent = player.GetComponent<UnityEngine.AI.NavMeshAgent>();
+            if (agent != null) agent.isStopped = false;
+        }
 
         CameraFollow camFollow = Camera.main.GetComponent<CameraFollow>();
         if (camFollow != null) camFollow.isInDialogue = false;
@@ -203,6 +230,11 @@ public class DialogueManager : MonoBehaviour
         if (player != null)
         {
             Variables.Object(player).Set("isDialogueOpen", false);
+        }
+        if (onDialogueEndCallback != null)
+        {
+            onDialogueEndCallback.Invoke(); 
+            onDialogueEndCallback = null;  
         }
     }
 }
