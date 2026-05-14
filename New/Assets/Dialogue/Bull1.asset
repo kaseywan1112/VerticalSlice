@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
-  m_Name: DIalogue_01
+  m_Name: Bull1
   m_EditorClassIdentifier: 
   lines:
-  - speakerName: Ghost
+  - speakerName: You
     portrait: {fileID: 21300000, guid: 7d3fa7d54b6bed141be46d6109a05be0, type: 3}
     text: Hi Cow
   - speakerName: Cow

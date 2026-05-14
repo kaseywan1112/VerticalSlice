@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Lamp3_long2
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: "Then there was this guy. I don\u2019t know his name. He looked like the
+      kind of guy who would make a bad decision and then act surprised about it.
+      He was holding a normal lamp. Not me, another lamp. Very basic lamp. Honestly,
+      kind of ugly, but I don\u2019t like judging other lamps."
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: "So I was looking at him, and I thought, okay, maybe he is going to clean
+      the lamp. Maybe he is going to sell the lamp. Maybe he is just taking the lamp
+      for a walk. I don\u2019t know human activities. Humans do weird stuff all the
+      time, specially kids"
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: ......
+    nextNode: {fileID: 11400000, guid: cc20e222ad357514faaa7aefb8b60c5a, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: Stop. I changed my mind. Give me the short version.
+    nextNode: {fileID: 11400000, guid: 7034a0dadb3a5684698faa0db94ee5aa, type: 2}

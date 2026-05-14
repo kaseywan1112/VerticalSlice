@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Lamp3_long4
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: "Me. He grabbed me. I was not the lamp that got thrown in. I was already
+      there. I was literally just existing in the river. I had nothing to do with
+      this whole situation. But he lifted me up like I was some prize from a game
+      show and started asking people, \u201CDid you drop this golden lamp? Or this
+      silver lamp?\u201D"
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: "And I was like, first of all, I am not silver. Second, nobody dropped
+      me. Third, I am pretty sure this story is supposed to be about an axe. Like,
+      I don\u2019t want to be rude, but if you are going to do a famous moral story,
+      at least get the object right."
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: "So yeah, I panicked. I mean, what was I supposed to do? Just stay there
+      and become someone\u2019s reward for being honest? No thank you. I have my
+      own life. I have my own plans. I don\u2019t want to be used as some random
+      lesson for children about not lying."
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: So I used all my magic, jumped out of his hand, flew out of the water,
+      and landed here. And now I am wet, tired, and honestly still kind of offended.
+      That is basically what happened.
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: ....................
+    nextNode: {fileID: 11400000, guid: eb3139d515c23ae49ac38316a656a15e, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: That shit was way too long
+    nextNode: {fileID: 11400000, guid: eb3139d515c23ae49ac38316a656a15e, type: 2}

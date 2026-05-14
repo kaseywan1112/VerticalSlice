@@ -57,6 +57,21 @@ public class InventoryManager : MonoBehaviour
         {
             selectedIndex = index;
             Debug.Log("当前选中了第 " + index + " 个格子");
+
+
+            if (index < items.Count)
+            {
+                string selectedItemName = items[index]; 
+
+                if ( selectedItemName == "MagicLamp")
+                {
+                    Debug.Log("摸到了神灯！触发神灯事件！");
+                    if (LampEventHandler.Instance != null)
+                    {
+                        LampEventHandler.Instance.UseLampFromInventory();
+                    }
+                }
+            }
         }
 
         for (int i = 0; i < maxCapacity; i++)

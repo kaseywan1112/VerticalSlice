@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Lamp3_long_end
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: You picked the long version.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: ......
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: "Wait\u2026 you look confused. Did you miss the part about Tuesday? I can
+      start over."
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: ...
+    nextNode: {fileID: 11400000, guid: facfeb236a81c024a8627c684eb145bd, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: I will take the short version.
+    nextNode: {fileID: 11400000, guid: 7034a0dadb3a5684698faa0db94ee5aa, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: Oh hell no. Thank you for the story, but no more stories please.
+    nextNode: {fileID: 11400000, guid: 87ef24b53e784d4408dfe4ce287af48e, type: 2}

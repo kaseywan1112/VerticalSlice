@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Lamp1
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: ???
+    portrait: {fileID: 0}
+    text: Finally... I'm out
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: OH MY GOOOOD! THE LAMP IS TALKING!
+  - speakerName: ???
+    portrait: {fileID: 0}
+    text: AH! What the hell? Why are you screaming?
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: "Yes, I can talk. I\u2019m a magic lamp. That is kind of the whole point."
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: You just flew out of the water and started talking.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Sorry. That scared me.
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: 'No, it''s YOU scared ME. I just escaped from the lake and the first thing
+      I hear is you dying in all capital letters.
+
+'
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Sorry about that... but that flying thing was actually kind of cool. Can
+      you do that again?
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: No. I almost got kidnapped.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Pleaseeeee. It looked really cool.
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: Of course it looked cool. I have swag.
+  options:
+  - speakerName: 
+    portrait: {fileID: 0}
+    replyText: Please don't say swag...
+    nextNode: {fileID: 11400000, guid: beb07ce892ac9fc4c8da63dbecf9ca7a, type: 2}
+  - speakerName: 
+    portrait: {fileID: 0}
+    replyText: Yea... anyways, why were you in the water?
+    nextNode: {fileID: 11400000, guid: 80d2fe8aa8718be4d82268b1fcc69fd7, type: 2}

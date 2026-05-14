@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
-  m_Name: 02
+  m_Name: Bull2
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Cow
     portrait: {fileID: 21300000, guid: ba53fa4dc20dd964ea8922989dda3edf, type: 3}
     text: Excuse me?
-  - speakerName: Ghost
+  - speakerName: You
     portrait: {fileID: 21300000, guid: 7d3fa7d54b6bed141be46d6109a05be0, type: 3}
     text: I said mooo. I thought that was your language.
   - speakerName: Cow
     portrait: {fileID: 21300000, guid: 63b391757dc92c84f9567fb28c925bd6, type: 3}
     text: Wow. That is so racist.
-  - speakerName: Ghost
+  - speakerName: You
     portrait: {fileID: 21300000, guid: 7d3fa7d54b6bed141be46d6109a05be0, type: 3}
     text: Wait, what? I was just trying to be friendly.
   - speakerName: Cow

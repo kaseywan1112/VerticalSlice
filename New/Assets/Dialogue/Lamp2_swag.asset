@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Lamp2_swag
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: What? The kids still say that, right?
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: "No. They really don\u2019t."
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: Okay, Epic bacon!
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Omg... that's even worse
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: Fine. It was lit.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Please stop
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: Then what do kids say now?
+  - speakerName: Lamp
+    portrait: {fileID: 0}
+    text: Then what do kids say now?
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: 67.
+    nextNode: {fileID: 11400000, guid: d12bd8cfdc66cf34598b2e5b4091dd12, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: 67.
+    nextNode: {fileID: 11400000, guid: d12bd8cfdc66cf34598b2e5b4091dd12, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: 67.
+    nextNode: {fileID: 11400000, guid: d12bd8cfdc66cf34598b2e5b4091dd12, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: 67.
+    nextNode: {fileID: 11400000, guid: d12bd8cfdc66cf34598b2e5b4091dd12, type: 2}
