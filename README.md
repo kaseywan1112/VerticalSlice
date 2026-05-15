@@ -41,7 +41,7 @@ Step 3:
 
 3. First, I built my player's NavMesh click-to-move using Visual Scripting. This graph perfectly bridges with my C# code because the very first thing it does is check an Object Variable (isDialogueOpen) controlled by my C# manager. If I am talking to the Genie, the graph uses a Negate node to instantly block the mouse input so I can't walk away. However, once the player was moving, I realized a static camera felt terrible. Doing smooth Lerp math is really messy in visual nodes, so I wrote a custom C# script (CameraFollow) to handle the smooth tracking in the background. Then, another issue came up: when I decorated the map with trees, the camera kept getting blocked by the leaves. To fix this, I wrote a second C# script (TreeHide). It constantly shoots a physics Raycast from the camera to the player. If the raycast hits a tree collider, the C# script temporarily fades out the tree's material so the player is always visible.
 
-4. Please grade my Timeline system. I have two animations: one where the lamp flies to the shore when you walk right and go through a hitbox, and one where you rub the lamp to summon the Genie with smoke effects.
+4. Please grade my Timeline system. I have two animations: one where the lamp flies to the shore when you walk right and go through a hitbox, and one where you rub the lamp to summon the Genie with smoke effects. (You can interact with the lamp by left-clicking on the lamp icon) 
 
 
 
