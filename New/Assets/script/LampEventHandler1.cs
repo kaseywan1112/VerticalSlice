@@ -8,13 +8,17 @@ public class LampEventHandler : MonoBehaviour
     public static LampEventHandler Instance;
 
     public DialogueNode lampForcedDialogue; 
+    public DialogueNode shortSummonDialogue;  
     public DialogueNode lampRecallDialogue; 
+
     public PlayableDirector summonTimeline;
     public Transform playerTransform;
-    public GameObject bullNpc; 
+    public GameObject bullNpc;
     public GameObject pressSpacePrompt;
 
-    private bool isGenieActive = false; 
+    private bool isGenieActive = false;
+    private bool hasMetGenie = false;
+
     void Awake()
     {
         Instance = this;
@@ -26,8 +30,18 @@ public class LampEventHandler : MonoBehaviour
 
         if (!isGenieActive)
         {
-            if (lampForcedDialogue != null)
-                DialogueManager.Instance.StartConversation(lampForcedDialogue, StartSummonAnimation);
+            if (!hasMetGenie)
+            {
+                if (lampForcedDialogue != null)
+                    DialogueManager.Instance.StartConversation(lampForcedDialogue, StartSummonAnimation);
+            }
+            else
+            {
+                if (shortSummonDialogue != null)
+                    DialogueManager.Instance.StartConversation(shortSummonDialogue, StartSummonAnimation);
+                else
+                    StartSummonAnimation();
+            }
         }
         else
         {
@@ -38,6 +52,8 @@ public class LampEventHandler : MonoBehaviour
 
     private void StartSummonAnimation()
     {
+        hasMetGenie = true;
+
         if (summonTimeline != null && playerTransform != null)
         {
             Transform stage = summonTimeline.transform;
@@ -54,7 +70,7 @@ public class LampEventHandler : MonoBehaviour
             if (pressSpacePrompt != null) pressSpacePrompt.SetActive(false);
 
             summonTimeline.Play();
-            isGenieActive = true; 
+            isGenieActive = true;
         }
     }
 
@@ -62,9 +78,8 @@ public class LampEventHandler : MonoBehaviour
     {
         if (bullNpc != null)
         {
-            bullNpc.SetActive(false); 
-            isGenieActive = false;   
-            Debug.Log("Genie recalled.");
+            bullNpc.SetActive(false);
+            isGenieActive = false;
         }
     }
 }
