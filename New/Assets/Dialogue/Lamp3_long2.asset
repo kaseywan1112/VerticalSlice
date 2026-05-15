@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 88a417eae85a4f64c9a7057463b0cf71, type: 3}
     text: "Then there was this guy. I don\u2019t know his name. He looked like the
       kind of guy who would make a bad decision and then act surprised about it.
       He was holding a normal lamp. Not me, another lamp. Very basic lamp. Honestly,
       kind of ugly, but I don\u2019t like judging other lamps."
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 1cf2efdbf19bab6468e7b31e8a9a4551, type: 3}
     text: "So I was looking at him, and I thought, okay, maybe he is going to clean
       the lamp. Maybe he is going to sell the lamp. Maybe he is just taking the lamp
       for a walk. I don\u2019t know human activities. Humans do weird stuff all the
       time, specially kids"
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 27bb86a2fbee45249b8fdf4deb810f7a, type: 3}
     replyText: ......
     nextNode: {fileID: 11400000, guid: cc20e222ad357514faaa7aefb8b60c5a, type: 2}
   - speakerName: You

@@ -46,34 +46,8 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void SelectSlot(int index)
+    public void OnSlotPointerDown(int index)
     {
-        if (selectedIndex == index)
-        {
-            selectedIndex = -1;
-            Debug.Log("取消了选中状态");
-        }
-        else
-        {
-            selectedIndex = index;
-            Debug.Log("当前选中了第 " + index + " 个格子");
-
-
-            if (index < items.Count)
-            {
-                string selectedItemName = items[index]; 
-
-                if ( selectedItemName == "MagicLamp")
-                {
-                    Debug.Log("摸到了神灯！触发神灯事件！");
-                    if (LampEventHandler.Instance != null)
-                    {
-                        LampEventHandler.Instance.UseLampFromInventory();
-                    }
-                }
-            }
-        }
-
         for (int i = 0; i < maxCapacity; i++)
         {
             if (highlightBorders[i] != null)
@@ -82,9 +56,33 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
-        if (selectedIndex != -1 && highlightBorders[selectedIndex] != null)
+        if (index < items.Count && highlightBorders[index] != null)
         {
-            highlightBorders[selectedIndex].SetActive(true);
+            highlightBorders[index].SetActive(true);
+            selectedIndex = index;
         }
+    }
+
+    public void OnSlotPointerUp(int index)
+    {
+        if (index >= 0 && index < maxCapacity && highlightBorders[index] != null)
+        {
+            highlightBorders[index].SetActive(false);
+        }
+
+        if (index < items.Count)
+        {
+            string selectedItemName = items[index];
+
+            if (selectedItemName == "MagicLamp" || selectedItemName == "神灯")
+            {
+                if (LampEventHandler.Instance != null)
+                {
+                    LampEventHandler.Instance.UseLampFromInventory();
+                }
+            }
+        }
+
+        selectedIndex = -1;
     }
 }

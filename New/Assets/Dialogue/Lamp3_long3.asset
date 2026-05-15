@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: But then this guy just threw the lamp into the river. Like, just threw
       it. No warning, no reason, no speech, nothing. I was like, okay, that was rude.
       I did not know that lamp personally, but still, as another lamp, I felt something.
       Maybe sadness. Maybe secondhand embarrassment.
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a6690421363fada43a0a73ded1a1f6a9, type: 3}
     text: And then, almost immediately, this random old guy came out of the water.
       Very dramatic. Very wet. Very shiny. I thought he was going to pick up the
       lamp that just got thrown in, because that would make sense, right? But no.
       He looked around for one second and grabbed me.
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c94401dbaeda7ba41b8f6b821553714a, type: 3}
     replyText: ............
     nextNode: {fileID: 11400000, guid: 770aa17a7bf2c89419f7d7c9053da33c, type: 2}
   - speakerName: You

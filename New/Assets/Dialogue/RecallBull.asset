@@ -10,21 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
-  m_Name: Bull1
+  m_Name: RecallBull
   m_EditorClassIdentifier: 
   lines:
-  - speakerName: You
-    portrait: {fileID: 21300000, guid: 7d3fa7d54b6bed141be46d6109a05be0, type: 3}
-    text: Hi Cow
-  - speakerName: Cow
-    portrait: {fileID: 21300000, guid: ba53fa4dc20dd964ea8922989dda3edf, type: 3}
-    text: Hi
+  - speakerName: Genie
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
+    text: Do you want to put me back into the lamp?
   options:
-  - speakerName: Ghost
-    portrait: {fileID: 0}
-    replyText: Mooooooo
+  - speakerName: 
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
+    replyText: Yes
     nextNode: {fileID: 0}
-  - speakerName: Ghost
+  - speakerName: 
     portrait: {fileID: 0}
-    replyText: Hi
-    nextNode: {fileID: 0}
+    replyText: No [Cancel]
+    nextNode: {fileID: 11400000, guid: e398abb1558df1540a0244391d5be3cb, type: 2}

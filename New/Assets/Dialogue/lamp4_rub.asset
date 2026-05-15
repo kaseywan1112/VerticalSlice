@@ -14,30 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 61ce7f18f680f0d409ce1a814d48b7cf, type: 3}
     text: Anyway, since you found me, and honestly, we are getting along pretty well,
       I can give you something nice.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     text: Something nice?
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 1cf2efdbf19bab6468e7b31e8a9a4551, type: 3}
     text: Yes. A reward. A benefit. A little magical customer service.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: That sounds suspicious.
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: It is not suspicious. It is a very normal magic lamp business model.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c347e233790817342891cf3a95ba10e5, type: 3}
     text: "Okay\u2026 what do I need to do?"
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 61ce7f18f680f0d409ce1a814d48b7cf, type: 3}
     text: Just rub me.
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c347e233790817342891cf3a95ba10e5, type: 3}
     replyText: "Okay, sure. I\u2019ll rub"
     nextNode: {fileID: 0}
   - speakerName: You

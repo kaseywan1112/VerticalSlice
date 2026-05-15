@@ -18,18 +18,15 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject inventoryPanel;
 
-
     public GameObject[] optionButtons;
     public GameObject continueButton;
-
 
     public GameObject player;
 
     private DialogueNode currentDataNode;
     private int currentLineIndex = 0;
+
     private Action onDialogueEndCallback;
-
-
 
     private void Start()
     {
@@ -43,11 +40,13 @@ public class DialogueManager : MonoBehaviour
             portraitImageUI.gameObject.SetActive(false);
         }
     }
-    public void StartConversation(DialogueNode startNode, Action onEndCallback)
+
+    public void StartConversation(DialogueNode startNode, Action onEndCallback = null)
     {
         onDialogueEndCallback = onEndCallback; 
-        StartDialogue(startNode);             
+        StartDialogue(startNode); 
     }
+
     public void StartDialogue(DialogueNode startNode)
     {
         if (dialoguePanel != null && dialoguePanel.activeSelf && currentDataNode == startNode)
@@ -180,13 +179,39 @@ public class DialogueManager : MonoBehaviour
             if (i < node.options.Length)
             {
                 optionButtons[i].SetActive(true);
-                optionButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = node.options[i].replyText;
+
+                string originalText = node.options[i].replyText;
+                bool isCancelOption = false;
+
+                if (originalText.Contains("[Cancel]"))
+                {
+                    isCancelOption = true;
+                    originalText = originalText.Replace("[Cancel]", "").Trim();
+                }
+
+                optionButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = originalText;
 
                 Button btn = optionButtons[i].GetComponent<Button>();
                 btn.onClick.RemoveAllListeners();
 
                 DialogueNode nextNode = node.options[i].nextNode;
-                btn.onClick.AddListener(() => StartDialogue(nextNode));
+
+                btn.onClick.AddListener(() =>
+                {
+                    if (isCancelOption)
+                    {
+                        onDialogueEndCallback = null;
+                    }
+
+                    if (nextNode != null)
+                    {
+                        StartDialogue(nextNode);
+                    }
+                    else
+                    {
+                        EndDialogue();
+                    }
+                });
             }
             else
             {
@@ -206,13 +231,6 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue()
     {
         dialoguePanel.SetActive(false);
-        if (player != null)
-        {
-            Variables.Object(player).Set("isDialogueOpen", false);
-
-            UnityEngine.AI.NavMeshAgent agent = player.GetComponent<UnityEngine.AI.NavMeshAgent>();
-            if (agent != null) agent.isStopped = false;
-        }
 
         CameraFollow camFollow = Camera.main.GetComponent<CameraFollow>();
         if (camFollow != null) camFollow.isInDialogue = false;
@@ -230,11 +248,15 @@ public class DialogueManager : MonoBehaviour
         if (player != null)
         {
             Variables.Object(player).Set("isDialogueOpen", false);
+
+            UnityEngine.AI.NavMeshAgent agent = player.GetComponent<UnityEngine.AI.NavMeshAgent>();
+            if (agent != null) agent.isStopped = false;
         }
+
         if (onDialogueEndCallback != null)
         {
-            onDialogueEndCallback.Invoke(); 
-            onDialogueEndCallback = null;  
+            onDialogueEndCallback.Invoke();
+            onDialogueEndCallback = null;
         }
     }
 }

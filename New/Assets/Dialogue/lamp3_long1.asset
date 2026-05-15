@@ -14,23 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 1cf2efdbf19bab6468e7b31e8a9a4551, type: 3}
     text: Excellent. So it all began on a Tuesday.
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 61ce7f18f680f0d409ce1a814d48b7cf, type: 3}
     text: "Okay, so it was a pretty nice day. I think it was Tuesday. No, wait, maybe
       it was Wednesday. Actually no, it was Tuesday, because I remember I was thinking,
       \u201Cwow, Tuesday again.\u201D I don\u2019t know why I thought that. It just
       felt very Tuesday."
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: Anyway, I was just in the river, doing my own thing. I was not doing anything
       crazy. I was just floating there. Very peaceful. Very normal. The water was
       kind of cold, but not too cold. Like, not comfortable, but also not painful.
       Just water, you know.
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     replyText: ...
     nextNode: {fileID: 11400000, guid: d6a0c81a85e0eb048a681a0446008c96, type: 2}
   - speakerName: You

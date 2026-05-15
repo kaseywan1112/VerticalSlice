@@ -14,32 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4cc0f77cf054ed340b8f3f30720d91ce, type: 3}
     text: "Me. He grabbed me. I was not the lamp that got thrown in. I was already
       there. I was literally just existing in the river. I had nothing to do with
       this whole situation. But he lifted me up like I was some prize from a game
       show and started asking people, \u201CDid you drop this golden lamp? Or this
       silver lamp?\u201D"
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: "And I was like, first of all, I am not silver. Second, nobody dropped
       me. Third, I am pretty sure this story is supposed to be about an axe. Like,
       I don\u2019t want to be rude, but if you are going to do a famous moral story,
       at least get the object right."
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a6690421363fada43a0a73ded1a1f6a9, type: 3}
     text: "So yeah, I panicked. I mean, what was I supposed to do? Just stay there
       and become someone\u2019s reward for being honest? No thank you. I have my
       own life. I have my own plans. I don\u2019t want to be used as some random
       lesson for children about not lying."
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 1cf2efdbf19bab6468e7b31e8a9a4551, type: 3}
     text: So I used all my magic, jumped out of his hand, flew out of the water,
       and landed here. And now I am wet, tired, and honestly still kind of offended.
       That is basically what happened.
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c94401dbaeda7ba41b8f6b821553714a, type: 3}
     replyText: ....................
     nextNode: {fileID: 11400000, guid: eb3139d515c23ae49ac38316a656a15e, type: 2}
   - speakerName: You

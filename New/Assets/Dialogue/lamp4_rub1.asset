@@ -14,52 +14,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4cc0f77cf054ed340b8f3f30720d91ce, type: 3}
     text: What is weird about it?
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: "I mean\u2026 I am literally going to touch you."
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4cc0f77cf054ed340b8f3f30720d91ce, type: 3}
     text: I am just a lamp. That is how it work.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: No, this whole thing is weird!
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: You are making it weird.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 27bb86a2fbee45249b8fdf4deb810f7a, type: 3}
     text: Okay, then what are your pronouns?
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 61ce7f18f680f0d409ce1a814d48b7cf, type: 3}
     text: My what?
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     text: Your pronouns.
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a6690421363fada43a0a73ded1a1f6a9, type: 3}
     text: "I am a genie in a fucking lamp. I don\u2019t even have a gender."
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 86a900989a1394240a11d11c992bd539, type: 3}
     text: So you are agender?
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: Nooo
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 58d2e48d0ceace946a5dab83c039b3ae, type: 3}
     text: ...
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 88a417eae85a4f64c9a7057463b0cf71, type: 3}
     text: ...........
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 88a417eae85a4f64c9a7057463b0cf71, type: 3}
     text: Wait.
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4cc0f77cf054ed340b8f3f30720d91ce, type: 3}
     text: Maybe?
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: Okay, I need to think about that later. Just rub me first.
   options:
   - speakerName: You

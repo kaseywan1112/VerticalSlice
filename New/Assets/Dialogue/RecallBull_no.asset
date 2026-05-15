@@ -10,21 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
-  m_Name: Bull1
+  m_Name: RecallBull_no
   m_EditorClassIdentifier: 
   lines:
-  - speakerName: You
-    portrait: {fileID: 21300000, guid: 7d3fa7d54b6bed141be46d6109a05be0, type: 3}
-    text: Hi Cow
-  - speakerName: Cow
-    portrait: {fileID: 21300000, guid: ba53fa4dc20dd964ea8922989dda3edf, type: 3}
-    text: Hi
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: "Okay. I\u2019ll wait here then."
   options:
-  - speakerName: Ghost
+  - speakerName: 
     portrait: {fileID: 0}
-    replyText: Mooooooo
-    nextNode: {fileID: 0}
-  - speakerName: Ghost
-    portrait: {fileID: 0}
-    replyText: Hi
+    replyText: 
     nextNode: {fileID: 0}

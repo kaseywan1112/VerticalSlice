@@ -14,45 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: ???
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a6690421363fada43a0a73ded1a1f6a9, type: 3}
     text: Finally... I'm out
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 27bb86a2fbee45249b8fdf4deb810f7a, type: 3}
     text: OH MY GOOOOD! THE LAMP IS TALKING!
   - speakerName: ???
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: a6690421363fada43a0a73ded1a1f6a9, type: 3}
     text: AH! What the hell? Why are you screaming?
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: "Yes, I can talk. I\u2019m a magic lamp. That is kind of the whole point."
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 27bb86a2fbee45249b8fdf4deb810f7a, type: 3}
     text: You just flew out of the water and started talking.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: Sorry. That scared me.
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4cc0f77cf054ed340b8f3f30720d91ce, type: 3}
     text: 'No, it''s YOU scared ME. I just escaped from the lake and the first thing
       I hear is you dying in all capital letters.
 
 '
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 86a900989a1394240a11d11c992bd539, type: 3}
     text: Sorry about that... but that flying thing was actually kind of cool. Can
       you do that again?
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f37d4b9411651a245acd90381f07228a, type: 3}
     text: No. I almost got kidnapped.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     text: Pleaseeeee. It looked really cool.
   - speakerName: Lamp
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 1cf2efdbf19bab6468e7b31e8a9a4551, type: 3}
     text: Of course it looked cool. I have swag.
   options:
   - speakerName: 
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     replyText: Please don't say swag...
     nextNode: {fileID: 11400000, guid: beb07ce892ac9fc4c8da63dbecf9ca7a, type: 2}
   - speakerName: 
