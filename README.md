@@ -10,7 +10,42 @@ Here is how the state machine works and how it relates to other systems in my ga
 
 
 ## Milestone 2 Devlog
-Milestone 2 Devlog goes here.
+1. I decided to build a Cinematic Event System using Timeline to handle two cutscenes: finding the magic lamp and rubbing it to summon the genie, since I already have my inventory and basic movement set up. (Note: My W5 feature was Branching Dialogue, so this is a new one)
+
+Step1: 
+1. Make a second virtual camera just to get a close-up shot of the magic lamp.
+2. Put a trigger zone by the river, so when the player walks into it, the camera switches over to the close-up.
+3. Update my interaction script so that when the player picks up the lamp, it hides the object and drops it straight into the InventoryManager.
+
+(Test: Run the game, walk up to the river, check if the camera swaps, and make sure the lamp actually goes into my inventory UI.)
+
+Step 2:
+1. Make two Playable Directors (Timelines). For the first one, just animate the lamp flying out of the lake and landing on the grass.
+2. For the second one, record an Animation Track of the player ghost wiggling to look like it's rubbing the lamp.
+3. Drop the smoke particle effect into a Control Track so it goes off right after the wiggle.
+4. Add an Activation Track to turn on the Bull NPC right inside the smoke, and an Animation Track to make it scale up from 0 to 1 so it looks like it's popping out.
+
+(Test: Hit play on the Timeline window and check if the timing of the smoke and the cow popping out looks good together.)
+
+Step 3:
+1. Hook up the inventory UI button (using Event Triggers for PointerUp/Down) so clicking the lamp triggers the second Timeline to play.
+2. Write a C# script to grab the whole Timeline stage (the smoke and the cow objects) and teleport it exactly 2 units in front of the player, so the animation plays wherever I am on the map.
+3. Add a quick NavMesh check in the script so if I'm facing the water, the cow spawns on the nearest valid grass instead of drowning in the lake.
+
+(Test: Run the game, run right up against the lake, open the inventory, click the lamp, and check if the cow safely spawns on the ground facing me.)
+
+2. Yes, it really helped. At first, I only had three big directions in my head, but writing this breakdown acted like a notebook that saved my logic before I got lost in the editor. I actually used my Test steps a lot during the process to make sure the current piece was working before moving to the next one. If I were to do it again, I would improve my breakdowns by writing down the exact variable names I plan to use right in the steps (like isGenieActive). That way, I wouldn't have to stop and think about naming things while coding, just like what we do in our lecture.
+
+<img width="1345" height="459" alt="微信图片_〉〇〉」-〇「-〈》_〉〈《〇「『_』〈〈" src="https://github.com/user-attachments/assets/b1a689db-3aae-47b4-99f4-672f1bea1857" />
+<img width="574" height="461" alt="image" src="https://github.com/user-attachments/assets/76c07488-3923-463d-b519-4eee29e115a9" />
+
+3. First, I built my player's NavMesh click-to-move using Visual Scripting. This graph perfectly bridges with my C# code because the very first thing it does is check an Object Variable (isDialogueOpen) controlled by my C# manager. If I am talking to the Genie, the graph uses a Negate node to instantly block the mouse input so I can't walk away. However, once the player was moving, I realized a static camera felt terrible. Doing smooth Lerp math is really messy in visual nodes, so I wrote a custom C# script (CameraFollow) to handle the smooth tracking in the background. Then, another issue came up: when I decorated the map with trees, the camera kept getting blocked by the leaves. To fix this, I wrote a second C# script (TreeHide). It constantly shoots a physics Raycast from the camera to the player. If the raycast hits a tree collider, the C# script temporarily fades out the tree's material so the player is always visible.
+
+4. Please grade my Timeline system. I have two animations: one where the lamp flies to the shore when you walk right and go through a hitbox, and one where you rub the lamp to summon the Genie with smoke effects.
+
+
+
+
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog
