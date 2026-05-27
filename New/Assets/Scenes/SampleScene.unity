@@ -643,7 +643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &26906082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12726,6 +12726,7 @@ MonoBehaviour:
   knockDialogue: {fileID: 11400000, guid: 6eb7700821d2ad44387ea61f4acebc0a, type: 2}
   playerTransform: {fileID: 1154317173}
   interactDistance: 3
+  interactPrompt: {fileID: 521231532}
 --- !u!4 &755319833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4afe2c9c5cd81cc4e862ea860a1ad222,
@@ -13035,7 +13036,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press F to Pick up
+  m_text: Press F to Interact
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13610,6 +13611,7 @@ MonoBehaviour:
   playerObject: {fileID: 1154317172}
   cameraFollowScript: {fileID: 330585548}
   cineBrain: {fileID: 330585549}
+  chickenCamera: {fileID: 1751961851}
 --- !u!4 &788292084
 Transform:
   m_ObjectHideFlags: 0
@@ -28207,7 +28209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1751961852
 Animator:
   serializedVersion: 5
@@ -33925,7 +33927,6 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1867059500}
   - {fileID: 1860164547}
-  - {fileID: 754627974}
   - {fileID: 1154317173}
   - {fileID: 39015420}
   - {fileID: 410461071}
@@ -33943,3 +33944,4 @@ SceneRoots:
   - {fileID: 918904632}
   - {fileID: 788292084}
   - {fileID: 1751961854}
+  - {fileID: 754627974}

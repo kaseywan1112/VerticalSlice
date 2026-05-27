@@ -23,5 +23,5 @@ MonoBehaviour:
     nextNode: {fileID: 11400000, guid: c2cdd59d51b97b64b89e49b5ac16be77, type: 2}
   - speakerName: 
     portrait: {fileID: 0}
-    replyText: No
-    nextNode: {fileID: 0}
+    replyText: Why not
+    nextNode: {fileID: 11400000, guid: c2cdd59d51b97b64b89e49b5ac16be77, type: 2}
