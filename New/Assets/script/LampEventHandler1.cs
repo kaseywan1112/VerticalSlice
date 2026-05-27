@@ -16,6 +16,10 @@ public class LampEventHandler : MonoBehaviour
     public GameObject bullNpc;
     public GameObject pressSpacePrompt;
 
+    public DialogueNode chickenForbiddenDialogue;
+    public float chickenForbiddenRadius = 5f;
+    public GameObject chickenObject;
+
     private bool isGenieActive = false;
     private bool hasMetGenie = false;
 
@@ -27,6 +31,19 @@ public class LampEventHandler : MonoBehaviour
     public void UseLampFromInventory()
     {
         if (DialogueManager.Instance == null) return;
+
+        if (chickenObject != null && chickenObject.activeInHierarchy)
+        {
+            float distToChicken = Vector3.Distance(playerTransform.position, chickenObject.transform.position);
+            if (distToChicken < chickenForbiddenRadius)
+            {
+                if (chickenForbiddenDialogue != null)
+                {
+                    DialogueManager.Instance.StartDialogue(chickenForbiddenDialogue);
+                }
+                return;
+            }
+        }
 
         if (!isGenieActive)
         {

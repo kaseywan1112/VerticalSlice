@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: Bull2
   m_EditorClassIdentifier: 
   lines:
-  - speakerName: Cow
+  - speakerName: Genie
     portrait: {fileID: 21300000, guid: ba53fa4dc20dd964ea8922989dda3edf, type: 3}
     text: Excuse me?
   - speakerName: You
     portrait: {fileID: 21300000, guid: 7d3fa7d54b6bed141be46d6109a05be0, type: 3}
     text: I said mooo. I thought that was your language.
-  - speakerName: Cow
+  - speakerName: Genie
     portrait: {fileID: 21300000, guid: 63b391757dc92c84f9567fb28c925bd6, type: 3}
     text: Wow. That is so racist.
   - speakerName: You
     portrait: {fileID: 21300000, guid: 7d3fa7d54b6bed141be46d6109a05be0, type: 3}
     text: Wait, what? I was just trying to be friendly.
-  - speakerName: Cow
+  - speakerName: Genie
     portrait: {fileID: 0}
     text: "Not because I am a cow means you can just walk up to me and say \u201Cmooo.\u201D"
   options:
@@ -33,3 +33,7 @@ MonoBehaviour:
     portrait: {fileID: 0}
     replyText: sorry bro
     nextNode: {fileID: 0}
+  - speakerName: 
+    portrait: {fileID: 0}
+    replyText: Mooooo
+    nextNode: {fileID: 11400000, guid: 5ade522ff0e045144a90ff4286427bdb, type: 2}
