@@ -17,7 +17,23 @@ public class ItemPickup : MonoBehaviour
             isPlayerNear = true;
             if (sharedPrompt == null)
             {
-                sharedPrompt = other.transform.Find("InteractionPrompt")?.gameObject;
+                // 关键点：不管 InteractionPrompt 藏在 Player 的哪一层子物体里，通通找出来！
+                sharedPrompt = other.transform.GetComponentInChildren<Transform>(true)
+                                    .Find("InteractionPrompt")?.gameObject;
+
+                // 如果上面还是不行，干脆用这句最暴力的：
+                if (sharedPrompt == null)
+                {
+                    Transform[] allChildren = other.GetComponentsInChildren<Transform>(true);
+                    foreach (Transform child in allChildren)
+                    {
+                        if (child.name == "InteractionPrompt")
+                        {
+                            sharedPrompt = child.gameObject;
+                            break;
+                        }
+                    }
+                }
             }
 
             if (sharedPrompt != null) sharedPrompt.SetActive(true);
@@ -39,12 +55,14 @@ public class ItemPickup : MonoBehaviour
         {
             if (InventoryManager.instance.AddItem(itemName, itemIcon))
             {
-                if (sharedPrompt != null)
+                SimplePrompt prompt = GetComponent<SimplePrompt>();
+                if (prompt != null)
                 {
-                    sharedPrompt.SetActive(false);
+                    prompt.ForceHide();
                 }
                 Destroy(gameObject);
             }
         }
+
     }
 }

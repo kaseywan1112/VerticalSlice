@@ -27,4 +27,4 @@ MonoBehaviour:
   - speakerName: Ghost
     portrait: {fileID: 0}
     replyText: Hi
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: ce145211d77720142b0c679e416bd7ed, type: 2}

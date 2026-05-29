@@ -10,14 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
-  m_Name: Bull3
+  m_Name: Bull5
   m_EditorClassIdentifier: 
-  lines:
-  - speakerName: Genie
-    portrait: {fileID: 0}
-    text: F**k you
-  options:
-  - speakerName: 
-    portrait: {fileID: 0}
-    replyText: 
-    nextNode: {fileID: 0}
+  lines: []
+  options: []
