@@ -54,7 +54,7 @@ Step 3:
 1. For this milestone, I made three shaders. The first one is for the magic lamp in the game. When the player puts the mouse on it, it will glow. The second shader is for the cow. Second, I made the genie blue and 
 translucent; it is a real genie now. The third shader is an outline/highlight effect. I tried to make it similar to the outline effect of Prof. Reid's, but my model has a small bug. I've created a simple version that still shows the effect, and I will debug it or try another method.
 2. I fixed a bug where the interaction prompt sometimes did not show up. Now the prompt appears more correctly when the player gets close to an object or NPC. Besides that, there are not many major bugs right now. Later, after I finish the last character art, I will also remove the white background from the character portraits and facial expressions, so they look more like normal visual novel character sprites.
-3. Since the last milestone, I added a chicken NPC. The player now needs to interact with the chicken coop and talk to the chicken.  I also made a new Timeline animation for the chicken coop, an animation where the chicken comes out. Besides that, I made three shaders and wrote more dialogue/text for the game.
+3. Since the last milestone, I added a chicken NPC. The player now needs to interact with the chicken coop and talk to the chicken.  I also made a new Timeline animation for the chicken coop, an animation where the chicken comes out. I added a mechanism that, when the player finishes talking with the lamp, they can click on the lamp again to recall or summon the genie. Besides that, I made three shaders and wrote more dialogue/text for the game. 
 
 
 
