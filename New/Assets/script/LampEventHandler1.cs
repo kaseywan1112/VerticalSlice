@@ -7,9 +7,11 @@ public class LampEventHandler : MonoBehaviour
 {
     public static LampEventHandler Instance;
 
-    public DialogueNode lampForcedDialogue; 
-    public DialogueNode shortSummonDialogue;  
-    public DialogueNode lampRecallDialogue; 
+    public DialogueNode lampForcedDialogue;
+    public DialogueNode shortSummonDialogue;
+    public DialogueNode lampRecallDialogue;
+    // 新增：用于神灯捡起后触发的剧情
+    public DialogueNode pickupDialogue;
 
     public PlayableDirector summonTimeline;
     public Transform playerTransform;
@@ -26,6 +28,19 @@ public class LampEventHandler : MonoBehaviour
     void Awake()
     {
         Instance = this;
+    }
+
+    // 修复：补全供 InventoryManager 调用的方法
+    public void TriggerPickupDialogue()
+    {
+        if (DialogueManager.Instance != null && pickupDialogue != null)
+        {
+            DialogueManager.Instance.StartDialogue(pickupDialogue);
+        }
+        else
+        {
+            Debug.LogWarning("LampEventHandler: 对话管理器或 PickupDialogue 未配置！");
+        }
     }
 
     public void UseLampFromInventory()

@@ -26,6 +26,15 @@ public class InventoryManager : MonoBehaviour
         items.Add(itemName);
         itemIcons.Add(icon);
         UpdateUI();
+
+        if (itemName == "MagicLamp" || itemName == "神灯")
+        {
+
+            if (LampEventHandler.Instance != null)
+            {
+                LampEventHandler.Instance.TriggerPickupDialogue();
+            }
+        }
         return true;
     }
 
