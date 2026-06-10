@@ -12,5 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
   m_Name: Bull5
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: You said you can grant one wish.
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: Yes, after you help me.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: That was not in the contract.
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: There is no contract. This is a magical lamp.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: "So I don\u2019t have a choice?"
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: You have choices. You can go up the hill now, or you can go up the hill
+      after complaining.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Fine..
   options: []

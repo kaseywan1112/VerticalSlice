@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Grave_ghost1
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: "Is this your grandpa\u2019s grave?"
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: No. This is my grave.
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: You came to the wrong dead guy.
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: You came to the wrong dead guy.
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: "Wait, so you\u2019re not Chicken Grandpa?"
+    nextNode: {fileID: 11400000, guid: 4f037362b5ddffc4391e062c28d196f1, type: 2}

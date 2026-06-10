@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Chicken4
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: Oh.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: ......
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: So he still talks about Grandpa.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: "That\u2019s\u2026 nice"
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: I...
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: I miss him too.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: We had a fight before.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: It was kind of dumb, honestly.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: I got mad, he got mad, and then we just stopped talking.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: "But\u2026 yeah. I still miss him."
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: ...
+    nextNode: {fileID: 11400000, guid: 0ae9a06e23c048848b87cbcac62d2781, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: You should probably talk to him.
+    nextNode: {fileID: 11400000, guid: 0ae9a06e23c048848b87cbcac62d2781, type: 2}

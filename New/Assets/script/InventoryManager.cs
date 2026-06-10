@@ -83,11 +83,21 @@ public class InventoryManager : MonoBehaviour
         {
             string selectedItemName = items[index];
 
+            // 如果点的是神灯
             if (selectedItemName == "MagicLamp" || selectedItemName == "神灯")
             {
                 if (LampEventHandler.Instance != null)
                 {
                     LampEventHandler.Instance.UseLampFromInventory();
+                }
+            }
+            // 【新增】如果点的是藏宝图
+            else if (selectedItemName == "藏宝图")
+            {
+                // 呼叫 MapUIController 弹出大图
+                if (MapUIController.Instance != null)
+                {
+                    MapUIController.Instance.OpenMap();
                 }
             }
         }

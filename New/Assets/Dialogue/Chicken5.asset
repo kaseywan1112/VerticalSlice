@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Chicken5
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: "Yeah\u2026"
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: Maybe I should talk to him
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: Anyway, if you want to find him, go to the right and head down the hill.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: Just keep going and you should see him.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: "And uh\u2026"
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: "If you see him, don\u2019t tell him I was crying about pizza."
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: Actually no, wait.
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: You can tell him that I want have pizza with him
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: Please, Thank you
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: Yea I will do it.
+    nextNode: {fileID: 0}

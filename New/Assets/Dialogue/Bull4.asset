@@ -15,11 +15,52 @@ MonoBehaviour:
   lines:
   - speakerName: Genie
     portrait: {fileID: 0}
-    text: Heyyyy I'm genie
+    text: Heyyyy. You finally summoned me.
   - speakerName: Genie
     portrait: {fileID: 0}
-    text: I need you to go up on the hill
+    text: I am the great Genie. Very powerful. Very magical. Very employed.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Great Genie?
   - speakerName: Genie
     portrait: {fileID: 0}
-    text: go knock on the chicken's door
-  options: []
+    text: Yes. Normally, I can grant you three wishes.
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: But my performance review has been really bad lately, so now I can only
+      grant one.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: "That is\u2026 not how I thought it works."
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: Budget cuts. Stop asking!
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: But before I grant your wish, I need you to do something for me.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Of course there is a quest.
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: I need you to visit my chicken brother.
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: We have not seen each other for a long time, and I want to know if he is
+      doing okay.
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: I remember his house is up on the hill. Just go to the right and keep going
+      up.
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: Also, you can press the lamp anytime to summon me or put me back inside.
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: Sure, I will do it
+    nextNode: {fileID: 0}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: No. I just want my wish.
+    nextNode: {fileID: 11400000, guid: 003006d4304842649ab42a3f9eb29e7b, type: 2}

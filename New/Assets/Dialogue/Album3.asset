@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Album3
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: Too late. You stood close to the lamp. That counts as consent in version
+      2.4 of the agreement.
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: That cannot be legal.
+  - speakerName: Genie
+    portrait: {fileID: 0}
+    text: Just make the wish
+  options:
+  - speakerName: 
+    portrait: {fileID: 0}
+    replyText: 
+    nextNode: {fileID: 11400000, guid: 54633153bf68ef94c8aa320e2d65df85, type: 2}

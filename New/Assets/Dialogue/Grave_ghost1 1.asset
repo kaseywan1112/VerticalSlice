@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
+  m_Name: Grave_ghost1 1
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: Do I look like a chicken to you?
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: "I\u2019m looking for Bull\u2019s chicken brother."
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: Ohhh, Chicken Grandpa.
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: Very dead, actually.
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: "But if you\u2019re looking for him, you\u2019re close."
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: Let me drew you a picture
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: Here. Take it.
+  - speakerName: Little Ghost
+    portrait: {fileID: 0}
+    text: "He\u2019s buried right next to me."
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: Thanks.
+    nextNode: {fileID: 11400000, guid: 9c641ee13d8f2fe47940cc9fd3d41f05, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: Why are you helping me?
+    nextNode: {fileID: 11400000, guid: 9c641ee13d8f2fe47940cc9fd3d41f05, type: 2}

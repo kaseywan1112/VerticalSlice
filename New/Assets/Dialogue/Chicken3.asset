@@ -16,4 +16,51 @@ MonoBehaviour:
   - speakerName: Chicken
     portrait: {fileID: 0}
     text: Where is my pizza!!!
-  options: []
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: "Sorry, I don\u2019t have your pizza"
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: What! Then where is it?!
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: "I have been waiting for my pizza for like\u2026 forever!"
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: WHERE
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: IS
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: MY
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: FOOOOOD!!!!!!
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: ...
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: Chill bro
+  - speakerName: You
+    portrait: {fileID: 0}
+    text: "I\u2019m looking for Bull\u2019s chicken brother."
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: "Bull\u2019s chicken brother?"
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: "\u2026That\u2019s my grandpa."
+  - speakerName: Chicken
+    portrait: {fileID: 0}
+    text: Wait, why are you looking for him?
+  options:
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: Bull asked me to check on him.
+    nextNode: {fileID: 11400000, guid: eab2dd6bd179cfe46a6486a606755cfe, type: 2}
+  - speakerName: You
+    portrait: {fileID: 0}
+    replyText: He said he misses him.
+    nextNode: {fileID: 11400000, guid: eab2dd6bd179cfe46a6486a606755cfe, type: 2}
