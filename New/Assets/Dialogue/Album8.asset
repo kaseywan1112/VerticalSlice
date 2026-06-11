@@ -12,5 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c3cae70ad8d9641a4b5be915b33736, type: 3}
   m_Name: Album8
   m_EditorClassIdentifier: 
-  lines: []
-  options: []
+  lines:
+  - speakerName: Chicken
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
+    text: You know.
+  - speakerName: You
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
+    text: "No, I really don\u2019t."
+  - speakerName: Chicken
+    portrait: {fileID: 21300000, guid: 0f17da1b79aac1e47bf44707bd7f1896, type: 3}
+    text: Yes you do
+  - speakerName: You
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
+    text: "Please don\u2019t make me guess."
+  - speakerName: Chicken
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
+    text: 'It''s something warm and it''s deep in my heart. '
+  - speakerName: Chicken
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
+    text: You know I miss....
+  - speakerName: You
+    portrait: {fileID: 21300000, guid: c347e233790817342891cf3a95ba10e5, type: 3}
+    text: Fine! Do your wish!
+  - speakerName: Chicken
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
+    text: Thank you!
+  options:
+  - speakerName: 
+    portrait: {fileID: 0}
+    replyText: 
+    nextNode: {fileID: 11400000, guid: 2e861f5f0bff54548a9b867a1416d76a, type: 2}

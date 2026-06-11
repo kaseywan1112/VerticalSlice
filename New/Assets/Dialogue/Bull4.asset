@@ -14,50 +14,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: Heyyyy. You finally summoned me.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: I am the great Genie. Very powerful. Very magical. Very employed.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     text: Great Genie?
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5be961f9a5bb06b4d95efb058e8ee00f, type: 3}
     text: Yes. Normally, I can grant you three wishes.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: But my performance review has been really bad lately, so now I can only
       grant one.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c347e233790817342891cf3a95ba10e5, type: 3}
     text: "That is\u2026 not how I thought it works."
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 37e91a4387ef267498d82d5f65a8a476, type: 3}
     text: Budget cuts. Stop asking!
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5be961f9a5bb06b4d95efb058e8ee00f, type: 3}
     text: But before I grant your wish, I need you to do something for me.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: Of course there is a quest.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: I need you to visit my chicken brother.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4de602275831a314da9bbbc701377c83, type: 3}
     text: We have not seen each other for a long time, and I want to know if he is
       doing okay.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: I remember his house is up on the hill. Just go to the right and keep going
       up.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: Also, you can press the lamp anytime to summon me or put me back inside.
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 86a900989a1394240a11d11c992bd539, type: 3}
     replyText: Sure, I will do it
     nextNode: {fileID: 0}
   - speakerName: You

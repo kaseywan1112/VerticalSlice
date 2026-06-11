@@ -14,38 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
     text: Oh.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
     text: ......
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: e9c5a0877fc8e8f48bb667414b72327b, type: 3}
     text: So he still talks about Grandpa.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
     text: "That\u2019s\u2026 nice"
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: I...
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: I miss him too.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: We had a fight before.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: It was kind of dumb, honestly.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: I got mad, he got mad, and then we just stopped talking.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: "But\u2026 yeah. I still miss him."
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     replyText: ...
     nextNode: {fileID: 11400000, guid: 0ae9a06e23c048848b87cbcac62d2781, type: 2}
   - speakerName: You

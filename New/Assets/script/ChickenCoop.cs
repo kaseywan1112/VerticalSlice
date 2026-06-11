@@ -68,17 +68,24 @@ public class ChickenCoop : MonoBehaviour
 
         if (DialogueManager.Instance != null)
         {
-            // 开始对话，传入 ChickenManager 的回调
+            // 开始对话 ("Do you want to knock?")
+            // 传入的 OnDialogueComplete 会在对话框彻底关闭后执行
             DialogueManager.Instance.StartConversation(knockDialogue, OnDialogueComplete);
         }
 
         hasKnocked = true;
     }
 
-    // 对话结束后的清理回调
+    // 对话结束后的清理回调（这时候玩家才真正敲了门！）
     private void OnDialogueComplete()
     {
-        // 触发鸡舍逻辑
+        // 【关键移动】对话彻底结束后，真正执行敲门，播放音效！
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayDoorKnock();
+        }
+
+        // 触发鸡舍逻辑，让鸡跑出来
         if (ChickenManager.Instance != null)
         {
             ChickenManager.Instance.StartChickenExit();

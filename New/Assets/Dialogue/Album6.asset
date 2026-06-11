@@ -14,76 +14,88 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
     text: I wish
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 26b7c805062432147828c3abd54b6aea, type: 3}
     text: I wish!!!
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
     text: I wish!!!!!!!!!!!!!!
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
     text: For pizza
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5be961f9a5bb06b4d95efb058e8ee00f, type: 3}
     text: ...
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     text: ...
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: My delivery never came.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: That is your wish?
   - speakerName: Chicken
     portrait: {fileID: 0}
     text: Yes.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36d07941ce46d5347839b5f70bf36094, type: 3}
     text: "What the f**k is that wish\u2026"
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: Wish granted.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36d07941ce46d5347839b5f70bf36094, type: 3}
     text: ARE YOU F**KING SERIOUS?
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c94401dbaeda7ba41b8f6b821553714a, type: 3}
     text: YOU WASTED MY ONE WISH ON A PIZZA?
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 674f535e9e647f045bcecace432618c2, type: 3}
     text: Can we eat now?
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c94401dbaeda7ba41b8f6b821553714a, type: 3}
     text: A SINGLE PIZZA?
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36d07941ce46d5347839b5f70bf36094, type: 3}
     text: "WE WALKED ALL THE WAY HERE, TALKED TO A RANDOM GHOST, FOUND YOUR GRANDPA\u2019S
       GRAVE, READ HIS SAD LITTLE PHOTO MESSAGE, AND YOU USED THE WISH FOR PIZZA?"
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
     text: I was hungry.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: YOUR GRANDPA WANTED TO SEE YOU ONE MORE TIME!
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: DO YOU NOT MISS YOUR GRANDPA?
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: e9c5a0877fc8e8f48bb667414b72327b, type: 3}
     text: I do.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c94401dbaeda7ba41b8f6b821553714a, type: 3}
     text: WHAT THE F*** IS WRONG WITH THIS PLACE?
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c94401dbaeda7ba41b8f6b821553714a, type: 3}
     text: ...
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 674f535e9e647f045bcecace432618c2, type: 3}
     text: Do you guys want a slice?
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c94401dbaeda7ba41b8f6b821553714a, type: 3}
     text: ...
+  - speakerName: You
+    portrait: {fileID: 21300000, guid: 86a900989a1394240a11d11c992bd539, type: 3}
+    text: '"Do you guys want a slice?"'
+  - speakerName: You
+    portrait: {fileID: 21300000, guid: 86a900989a1394240a11d11c992bd539, type: 3}
+    text: Do I want a slice?
+  - speakerName: You
+    portrait: {fileID: 21300000, guid: 86a900989a1394240a11d11c992bd539, type: 3}
+    text: ...
+  - speakerName: You
+    portrait: {fileID: 21300000, guid: 86a900989a1394240a11d11c992bd539, type: 3}
+    text: HAHAHA
   options: []

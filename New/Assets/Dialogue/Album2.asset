@@ -14,68 +14,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4de602275831a314da9bbbc701377c83, type: 3}
     text: Hey...
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: Don't be sad
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: Let me give you the wish
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: That picture is enough.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c347e233790817342891cf3a95ba10e5, type: 3}
     text: Enough for what?
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: For me. I will remember him.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: You finished my request. So now, I can grant your wish.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: But before that, please read the full magical user agreement.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: The what?
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: By making a wish, you agree that the Cow Genie, the lamp, the lake, the
       chicken family, and any nearby dead relatives are not responsible for any side
       effects caused by your wish.
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36d07941ce46d5347839b5f70bf36094, type: 3}
     text: Oh no.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: 'Side effects may include, but are not limited to: emotional damage, physical
       damage, spiritual damage, bad luck, weird dreams, awkward family reunions,
       sudden pizza cravings, and being turned into a lesson for children.'
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: You also agree that your wish must be clear, simple, affordable, and not
       annoying. If your wish is too big, too powerful, too vague, or sounds like
       something a villain would ask for, I have the right to say no.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c8ae8ad4b19d4d245815a4d418701c43, type: 3}
     text: The Cow Genie is also not responsible if your wish technically comes true
       but in a stupid way. If you wish to be rich, I might give you one very confident
       coin. If you wish for love, I might give you a chicken who likes your shoes.
       If you wish for food, please understand that pizza is the safest option.
   - speakerName: Genie
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 4a065c356b09ccf4ab23f3ffd7b568e5, type: 3}
     text: Finally, once your wish is made, it cannot be refunded, exchanged, reviewed,
       appealed, complained about, or blamed on me. By continuing, you agree that
       you are making this wish with your own free will, your own bad judgment, and
       probably not enough information.
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     replyText: I Agree
     nextNode: {fileID: 11400000, guid: 54633153bf68ef94c8aa320e2d65df85, type: 2}
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     replyText: I do not agree to any of this.
     nextNode: {fileID: 11400000, guid: e67edafa431477a4f91a43cb3c2b475e, type: 2}

@@ -10,7 +10,6 @@ public class LampEventHandler : MonoBehaviour
     public DialogueNode lampForcedDialogue;
     public DialogueNode shortSummonDialogue;
     public DialogueNode lampRecallDialogue;
-    // 新增：用于神灯捡起后触发的剧情
     public DialogueNode pickupDialogue;
 
     public PlayableDirector summonTimeline;
@@ -30,7 +29,6 @@ public class LampEventHandler : MonoBehaviour
         Instance = this;
     }
 
-    // 修复：补全供 InventoryManager 调用的方法
     public void TriggerPickupDialogue()
     {
         if (DialogueManager.Instance != null && pickupDialogue != null)
@@ -46,6 +44,9 @@ public class LampEventHandler : MonoBehaviour
     public void UseLampFromInventory()
     {
         if (DialogueManager.Instance == null) return;
+
+        // 【新增】只要玩家使用了神灯，立刻播放擦神灯(Window Wipe)的声音！
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayRubLamp();
 
         if (chickenObject != null && chickenObject.activeInHierarchy)
         {
@@ -85,6 +86,9 @@ public class LampEventHandler : MonoBehaviour
     private void StartSummonAnimation()
     {
         hasMetGenie = true;
+
+        // 【新增】进入召唤流程，马上要放 Timeline 了，播放牛 Pop Up 的音效！
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayPopUp();
 
         if (summonTimeline != null && playerTransform != null)
         {

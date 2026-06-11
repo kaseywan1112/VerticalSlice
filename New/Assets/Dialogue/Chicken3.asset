@@ -14,50 +14,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 0f17da1b79aac1e47bf44707bd7f1896, type: 3}
     text: Where is my pizza!!!
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 787fafedeaa52fc4a96a9263c592c76e, type: 3}
     text: "Sorry, I don\u2019t have your pizza"
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 0f17da1b79aac1e47bf44707bd7f1896, type: 3}
     text: What! Then where is it?!
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 0f17da1b79aac1e47bf44707bd7f1896, type: 3}
     text: "I have been waiting for my pizza for like\u2026 forever!"
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: WHERE
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: IS
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: MY
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 0f17da1b79aac1e47bf44707bd7f1896, type: 3}
     text: FOOOOOD!!!!!!
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c347e233790817342891cf3a95ba10e5, type: 3}
     text: ...
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: c347e233790817342891cf3a95ba10e5, type: 3}
     text: Chill bro
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 27bb86a2fbee45249b8fdf4deb810f7a, type: 3}
     text: "I\u2019m looking for Bull\u2019s chicken brother."
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 26b7c805062432147828c3abd54b6aea, type: 3}
     text: "Bull\u2019s chicken brother?"
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: "\u2026That\u2019s my grandpa."
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: e9c5a0877fc8e8f48bb667414b72327b, type: 3}
     text: Wait, why are you looking for him?
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     replyText: Bull asked me to check on him.
     nextNode: {fileID: 11400000, guid: eab2dd6bd179cfe46a6486a606755cfe, type: 2}
   - speakerName: You

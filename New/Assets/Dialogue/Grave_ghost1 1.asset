@@ -14,32 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Little Ghost
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 218ab3ac7456d2f4b834dc4ced4c8cd5, type: 3}
     text: Do I look like a chicken to you?
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 27bb86a2fbee45249b8fdf4deb810f7a, type: 3}
     text: "I\u2019m looking for Bull\u2019s chicken brother."
   - speakerName: Little Ghost
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 218ab3ac7456d2f4b834dc4ced4c8cd5, type: 3}
     text: Ohhh, Chicken Grandpa.
   - speakerName: Little Ghost
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 218ab3ac7456d2f4b834dc4ced4c8cd5, type: 3}
     text: Very dead, actually.
   - speakerName: Little Ghost
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 218ab3ac7456d2f4b834dc4ced4c8cd5, type: 3}
     text: "But if you\u2019re looking for him, you\u2019re close."
   - speakerName: Little Ghost
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 218ab3ac7456d2f4b834dc4ced4c8cd5, type: 3}
     text: Let me drew you a picture
   - speakerName: Little Ghost
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 218ab3ac7456d2f4b834dc4ced4c8cd5, type: 3}
     text: Here. Take it.
   - speakerName: Little Ghost
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 218ab3ac7456d2f4b834dc4ced4c8cd5, type: 3}
     text: "He\u2019s buried right next to me."
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     replyText: Thanks.
     nextNode: {fileID: 11400000, guid: 9c641ee13d8f2fe47940cc9fd3d41f05, type: 2}
   - speakerName: You

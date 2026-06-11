@@ -14,34 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: "Yeah\u2026"
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f9206739d0fdeb04a93e48371b1f0a65, type: 3}
     text: Maybe I should talk to him
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: e9c5a0877fc8e8f48bb667414b72327b, type: 3}
     text: Anyway, if you want to find him, go to the right and head down the hill.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: e9c5a0877fc8e8f48bb667414b72327b, type: 3}
     text: Just keep going and you should see him.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: "And uh\u2026"
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: "If you see him, don\u2019t tell him I was crying about pizza."
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: e9c5a0877fc8e8f48bb667414b72327b, type: 3}
     text: Actually no, wait.
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: You can tell him that I want have pizza with him
   - speakerName: Chicken
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 917f271717e1f3a4aba68da5138d20ca, type: 3}
     text: Please, Thank you
   options:
   - speakerName: You
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 139664e598056644193b46fd8e8d34e3, type: 3}
     replyText: Yea I will do it.
     nextNode: {fileID: 0}

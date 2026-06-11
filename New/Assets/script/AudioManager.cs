@@ -33,11 +33,12 @@ public class AudioManager : MonoBehaviour
             bgmSource.Play();
         }
 
-        // 初始化脚步声（设置为循环模式，但先不响）
+        // 初始化脚步声
         if (footstepSound != null && footstepSource != null)
         {
             footstepSource.clip = footstepSound;
-            footstepSource.loop = true;
+            // 【关键修改】改成不循环！让它自然播完
+            footstepSource.loop = false;
         }
     }
 
@@ -57,17 +58,14 @@ public class AudioManager : MonoBehaviour
     public void PlayRubLamp() { PlaySFX(rubLampSound); }
 
     // ================= 控制脚步声的开关 =================
-    public void SetFootstepState(bool isWalking)
+    public void PlayFootstep()
     {
         if (footstepSource == null || footstepSound == null) return;
 
-        if (isWalking && !footstepSource.isPlaying)
+        // 【关键修改】如果没在播放，才播放一次。如果正在播放，绝对不打断它！
+        if (!footstepSource.isPlaying)
         {
-            footstepSource.Play(); // 玩家走动，且声音没响，就播放
-        }
-        else if (!isWalking && footstepSource.isPlaying)
-        {
-            footstepSource.Pause(); // 玩家停下，声音就暂停
+            footstepSource.Play();
         }
     }
 }
