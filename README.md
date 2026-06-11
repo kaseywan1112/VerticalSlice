@@ -67,5 +67,15 @@ Final Devlog goes here.
 ## Open-source assets
 
 [Ghost character Free](https://assetstore.unity.com/packages/3d/characters/creatures/ghost-character-free-267003)
+
 [Farm Assets](https://animagic3d.itch.io/farm-assets-1)
 
+[Fast Food Low Poly Building 3D](https://assetstore.unity.com/packages/3d/environments/urban/fast-food-low-poly-building-3d-180630)
+
+[Environment Pack](https://assetstore.unity.com/packages/3d/vegetation/environment-pack-free-forest-sample-168396)
+
+[Little Ghost lowpoly](https://assetstore.unity.com/packages/3d/characters/little-ghost-lowpoly-free-271926)
+
+[Sound Effect (pixabay)](https://pixabay.com/)
+
+[Sound Effect & BGM (aigei)](https://www.aigei.com/)
