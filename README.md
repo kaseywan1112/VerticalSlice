@@ -56,14 +56,41 @@ translucent; it is a real genie now. The third shader is an outline/highlight ef
 2. I fixed a bug where the interaction prompt sometimes did not show up. Now the prompt appears more correctly when the player gets close to an object or NPC. Besides that, there are not many major bugs right now. Later, after I finish the last character art, I will also remove the white background from the character portraits and facial expressions, so they look more like normal visual novel character sprites.
 3. Since the last milestone, I added a chicken NPC. The player now needs to interact with the chicken coop and talk to the chicken.  I also made a new Timeline animation for the chicken coop, an animation where the chicken comes out. I added a mechanism that, when the player finishes talking with the lamp, they can click on the lamp again to recall or summon the genie. Besides that, I made three shaders and wrote more dialogue/text for the game. 
 
-
-
-
-
-## Milestone 4 Devlog
-Milestone 4 Devlog goes here.
 ## Final Devlog
-Final Devlog goes here.
+
+### Question 1: 
+My game is a 3D side-scrolling point-and-click adventure puzzle game where the player controls a ghost who discovers a magic lamp, embarking on a whimsical adventure. The core gameplay loop is about exploring the environment, collecting key items into an inventory, using those items to solve contextual puzzles, and engaging in branching dialogue to progress the narrative. In the current build, players can interact with various objects such as a magic lamp, a chicken coop, a gravestone, a treasure map, and a photo album. Key items like the lamp, map, and album are stored in the inventory for specific interactions. Furthermore, the game features a rich narrative delivery: dialogue choices are meaningful and yield unique responses, and major interactions trigger customized cinematic Timelines.
+
+When relating this implemented content back to my original Vertical Slice plan, there has been a noticeable shift in design focus. Initially, I planned for the game to lean heavily into traditional, complex puzzle-solving mechanics. However, during development, the experience naturally evolved to be more narrative and dialogue-driven. Although the puzzle elements are lighter than originally intended, this Vertical Slice successfully achieves its primary goal. It encapsulates all the core gameplay systems, the intended emotional experience, and the fundamental game loop. By featuring a complete, playable sequence with a distinct beginning, middle, and end, this slice effectively illustrates to the player exactly what the pacing, tone, and mechanical flow of the full game will look like.
+
+### Question 2:
+In my game, I used Unity's Shader Graph to make three cool visual effects: a glowing look for the Genie Bull and magic lamp, and an outline effect for objects.
+<img width="1610" height="862" alt="image" src="https://github.com/user-attachments/assets/61fabcb7-a65f-474c-8426-16ea360cdac7" />
+
+I wanted the Genie Bull to look like a magical spirit. To do this, I made a Genie_shader using a Fresnel Effect node. The Fresnel effect checks the angle between the camera's view direction and the model's surface normals, creating a bright ring around the edges of the 3D model. I then multiplied this ring with a custom Glowcolor and plugged it into the Emission channel. This makes the bull look like a glowing ghost. (I do the same thing to the magic lamp to make it glow.)
+
+<img width="1710" height="889" alt="image" src="https://github.com/user-attachments/assets/0340ef9d-c383-4261-9c7a-71f09b11c2ca" />
+
+For the object outlines, I originally followed Professor Reid's tutorial. However, I ran into some issues where the outline wouldn't generate correctly on some parts of my specific models. So, I searched online and built a simpler version. Here is how I made it step by step: First, I took the Object Space Position of the mesh. Then, I took the model's Normal Vector and multiplied it by a custom Outline Thickness variable. A key step I added here was taking the model's Scale and dividing the thickness by it—this ensures the outline doesn't look weird when the object gets resized in the game. Finally, I added this pushed-out normal calculation back to the original position and plugged it into the Vertex Position. I then assigned a simple Outline Color to the Fragment shader. This creates a slightly larger, colored "shell" around the original object.
+
+From a gameplay side, these rendering effects are controlled by my C# scripts. For the outline, I wrote a script called MouseHighlight (which you can find in the repo). The outline is not always on. When the player hovers their mouse over an interactable object, the MouseHighlight script detects it and dynamically activates the outline material on the object's MeshRenderer. When the mouse leaves, the script turns it off.
+
+### Question 3:
+My breakdown process is actually quite different from how most people do it. I think most people start by picking a game genre and then look at similar games to figure out what mechanics or characters they need. But my mind works differently. I usually start with a random image that pops into my head—like a funny scene, a story idea, or a specific ending.
+
+For this game, I thought of the funny ending first, and then I built the whole game around it. I worked backward: I thought of a magic lamp, making a wish, why there is only one wish, and why the character would make such a funny wish. Once I have the story figured out, then I start breaking down what the game actually needs to make that story happen. I list it out like this: I need a magic lamp object -> the lamp needs an interaction script -> it needs an NPC inside -> the NPC needs a dialogue system -> the NPC gives tasks -> the player needs to interact with items to complete them and reach the ending. After I have this list, I finally break them down into the specific C# scripts and mechanics required.
+
+1. For my planning process, I definitely plan to keep using the bubble diagrams and task step breakdowns we practiced this quarter. I have gotten very used to organizing my work into specific steps and pausing at milestones to test if things are actually working. You can even see this habit in my Git commits, where I often write down exactly what I just finished and what my next step will be.
+
+2. Breaking a large project into small steps really helps me wrap my head around the overall scope and gives me a clear idea of the workload. However, I learned that breaking things down has its limits. In actual development, unexpected issues always pop up that you didn't plan for. For example, my outline shader didn't work at first because the model's mesh didn't have the proper structure, which took me a huge amount of extra time to fix. Also, my design ideas often change mid-project. Because of this, I realized that short-term step planning works perfectly for me, but making a super rigid long-term plan from day one simply doesn't work, because things are always changing.
+
+3. This directly relates to how I created my Vertical Slice. As I mentioned earlier, I originally planned for a heavy puzzle game, but ended up reducing the puzzles. Even though the focus shifted, I still followed my step-by-step plan to get the core elements working, and overall, the process went smoothly.
+  
+   However, if I look at what went poorly and how I would improve, it would be my planning for small details. Late in development, I wanted to completely redo my dialogue UI. I realized I needed a name tag, a dialogue box, character portraits, a continue button, and option buttons. I wanted to make the portrait slightly transparent behind the dialogue box and let the player click anywhere on the screen to continue. But changing all these tiny details and interactions at the end was extremely messy and difficult, so I had to give up and stick to my old design.
+
+   As a result, my big takeaway for next time is to heavily study reference games in the same genre before I break down my tasks. I need to figure out all the small details early on—like exactly what buttons are on the screen, or if the player clicks a specific button versus anywhere on the screen. Referencing other games early will help me build a much better and more detailed step-by-step plan from the very beginning.
+
+
 ## Open-source assets
 
 [Ghost character Free](https://assetstore.unity.com/packages/3d/characters/creatures/ghost-character-free-267003)
